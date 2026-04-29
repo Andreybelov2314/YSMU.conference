@@ -1,0 +1,628 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alm_1 {
+    background-image: url('images/AFnn8mGXZQs.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    padding-top: 20px;
+    min-height: 600px;
+}
+
+/* --- ОБНОВЛЕННАЯ ШАПКА (БОЛЬШАЯ) --- */
+.uk-section-default {
+    width: 92%; 
+    margin: 20px auto; 
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 120px; 
+    padding: 0 60px; 
+    height: 110px; 
+    display: flex;
+    align-items: center; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+.uk-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+}
+
+.uk-logo img {
+    max-height: 85px; 
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.uk-logo img:hover {
+    transform: scale(1.05); 
+}
+
+.uk-navbar-nav {
+    display: flex;
+    gap: 30px; /* Увеличил расстояние между пунктами */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.uk-navbar-nav li a {
+    text-decoration: none;
+    color: #1a3a5f !important; 
+    font-size: 18px; 
+    font-weight: 600;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.uk-navbar-nav li a:hover {
+    color: #1b1387 !important;
+    background: transparent;
+}
+
+/* --- НОВЫЙ БЛОК ЗАГОЛОВКА (ДЛЯ РЕВМАТОЛОГИИ) --- */
+.hero-content-wrapper {
+    text-align: center;
+    padding: 100px 20px 140px;
+    display: flex;
+    justify-content: center;
+    /* Здесь твой фон с AFnn8mGXZQs.jpg */
+}
+
+.conference-header-box {
+    max-width: 1000px; /* Вернул твой исходный размер */
+    text-align: center;
+}
+
+.conf-category {
+    font-size: 28px; /* Чуть-чуть больше */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #ffffff !important; 
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px #000, 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.conf-main-title {
+    font-size: 78px; /* Увеличил совсем немного, чтобы не съехало */
+    font-weight: 900;
+    color: #ffffff !important;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000, 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.conf-subtitle {
+    font-size: 36px; /* Чуть-чуть больше */
+    font-weight: 600;
+    color: #ffffff !important;
+    line-height: 1.3;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-shadow: 2px 2px 4px #000, 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.conf-date-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(2, 8, 46, 0.75) !important; 
+    backdrop-filter: blur(5px);
+    color: #ffffff !important;
+    padding: 20px 60px;
+    border-radius: 100px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.conf-date-box p {
+    margin: 0 !important;
+    font-size: 31px;
+    font-weight: 800;
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+/* Навигация: темно-синий */
+.uk-navbar-nav li a {
+    color: #002b5c !important; /* Насыщенный темно-синий */
+    font-weight: 700;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.uk-container-large {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+/* Информация о месте и организаторе */
+.org-details-section {
+    padding: 110px 0;
+    position: relative;
+    background: linear-gradient(150deg, #ffffff 0%, #eef6ff 100%);
+    overflow: hidden;
+}
+
+.org-wrapper {
+    max-width: 1200px; /* Увеличил ширину для более крупного текста */
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px;
+    z-index: 5;
+}
+
+.org-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px; /* Увеличил отступ между строками */
+    gap: 25px;
+}
+
+/* Стили плашек: Крупнее, закругленные, с тенью */
+.org-label {
+    background-color: #0d2e51;
+    color: #ffffff;
+    padding: 10px 25px; /* Увеличил внутренние отступы */
+    font-family: "Arial Narrow", "Roboto Condensed", sans-serif;
+    font-size: 24px; /* Текст крупнее */
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: right;
+    min-width: 240px; /* Плашка стала массивнее */
+    border-radius: 8px; /* Закругление краев */
+    box-shadow: 0 4px 12px rgba(13, 46, 81, 0.25); /* Небольшая тень */
+}
+
+/* Стили основного текста: Крупнее */
+.org-content {
+    font-family: "Arial Narrow", "Roboto Condensed", sans-serif;
+    font-size: 24px; /* Текст крупнее */
+    color: #1a1a1a;
+    line-height: 1.3;
+    padding-top: 8px;
+    font-weight: 400;
+}
+
+/* Декоративный уголок (без изменений, но подстроен под масштаб) */
+.design-corner {
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.5;
+}
+
+.line-v {
+    width: 1.5px; /* Чуть толще под крупный текст */
+    height: 140px;
+    background-color: #0d2e51;
+    margin-right: 15px;
+}
+
+.lines-h {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lines-h span {
+    display: block;
+    height: 1.5px;
+    background-color: #0d2e51;
+}
+/*  */
+/* ===== ПЛАШКА С ОРГАНИЗАТОРАМИ (Темная версия) ===== */
+.sponsors-blue-section {
+    background-color: #f8fbff !important; /* Очень светлый фон */
+    padding: 100px 0;
+    width: 100%;
+}
+
+.sponsors-title-thin {
+    color: #15528e !important; /* Текст теперь синий для контраста */
+    font-size: 46px !important;
+    font-weight: 200 !important;
+    text-transform: uppercase;
+    letter-spacing: 15px !important;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.sponsors-grid-3x2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.sponsor-card-airy {
+    background: #ffffff !important;
+    border-radius: 40px !important;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1e9ff !important; 
+    box-shadow: 0 20px 50px rgba(30, 144, 255, 0.1); 
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sponsor-card-airy:hover {
+    transform: translateY(-12px);
+    border-color: #1E90FF !important; 
+    box-shadow: 0 30px 70px rgba(14, 69, 123, 0.2);
+}
+
+.gradient-divider {
+    height: 1px;
+    width: 60%;
+    margin: 25px 0;
+    /* Градиент от прозрачного к голубому */
+    background: linear-gradient(to right, 
+        rgba(30, 144, 255, 0) 0%, 
+        rgba(30, 144, 255, 0.3) 50%, 
+        rgba(30, 144, 255, 0) 100%
+    );
+}
+
+.sponsor-logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sponsor-logo img {
+    max-height: 100%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.sponsor-name-thin {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    color: #2c4960 !important;
+    margin: 0 !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .sponsors-grid-3x2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+    .sponsors-grid-3x2 { grid-template-columns: 1fr; }
+    .sponsors-title-thin { font-size: 26px !important; letter-spacing: 8px !important; }
+}
+/* ========================================
+   КОНФЕРЕНЦИЯ РЕВМАТОЛОГОВ — ВСЁ ТЁМНО-СИНЕЕ
+   ======================================== */
+
+.rheum-conference-program {
+    background: #1e4167 !important;
+    padding: 60px 0;
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+    color: #c8d6e5;
+}
+.rheum-conference-program .uk-container {
+    background: transparent !important;
+}
+
+.rheum-conference-program > .uk-container {
+    background: #060e1a !important;
+}
+
+/* --- Заголовок "ПРОГРАММА КОНФЕРЕНЦИИ" --- */
+.rheum-conference-program .program-main-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.rheum-conference-program .program-main-title.uk-heading-line::before {
+    border-bottom: 3px solid rgba(74, 144, 226, 0.5);
+}
+
+.rheum-conference-program .program-main-title span {
+    background: #060e1a;
+    padding: 0 25px;
+}
+
+/* --- Блок "НАУЧНАЯ ПРОГРАММА" --- */
+.rheum-conference-program .program-science-header {
+    margin: 45px 0 35px;
+}
+
+.rheum-conference-program .science-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    background: linear-gradient(180deg, #c5d9f0 0%, #5d7fa0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.rheum-conference-program .science-moderator {
+    font-size: 1rem;
+    color: #8fa4bc;
+    margin-bottom: 20px;
+}
+
+.rheum-conference-program .science-moderator strong {
+    color: #d9e6f2;
+}
+
+.rheum-conference-program .science-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #1e3b5c 20%, #4a90e2 50%, #1e3b5c 80%, transparent 100%);
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* --- Карточки --- */
+.rheum-conference-program .timeline-item {
+    display: flex;
+    margin-bottom: 18px;
+    background: #0b1a2e;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(74, 144, 226, 0.2);
+    border: 1px solid rgba(74, 144, 226, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.rheum-conference-program .timeline-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 30px -10px rgba(0, 20, 50, 0.9), 0 0 0 1px rgba(100, 170, 255, 0.4);
+    border-color: rgba(100, 170, 255, 0.5);
+}
+
+/* Время */
+.rheum-conference-program .timeline-time {
+    min-width: 130px;
+    background: #04101e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #b8d0f0;
+    letter-spacing: 0.5px;
+    border-right: 1px solid rgba(74, 144, 226, 0.35);
+    padding: 18px 10px;
+    text-shadow: 0 0 8px rgba(70, 130, 200, 0.5);
+}
+
+/* Контент */
+.rheum-conference-program .timeline-content {
+    padding: 18px 22px;
+    flex: 1;
+}
+
+/* Типы карточек */
+.rheum-conference-program .timeline-content.registration {
+    background: linear-gradient(135deg, #0e1f33 0%, #091624 100%);
+    border-left: 4px solid #3a6ea5;
+}
+
+.rheum-conference-program .timeline-content.opening {
+    background: linear-gradient(135deg, #102238 0%, #0a1829 100%);
+    border-left: 4px solid #5f9ea0;
+}
+
+.rheum-conference-program .timeline-content.report {
+    background: linear-gradient(135deg, #0d1c30 0%, #081320 100%);
+    border-left: 4px solid #4a90e2;
+}
+
+/* Заголовки */
+.rheum-conference-program .timeline-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #eef5ff;
+    margin: 0 0 6px;
+}
+
+.rheum-conference-program .timeline-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #b6cef0;
+    margin: 12px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.rheum-conference-program .timeline-speaker-info {
+    font-size: 0.9rem;
+    color: #8faac9;
+    margin: 0 0 8px;
+    font-style: italic;
+}
+
+/* Список */
+.rheum-conference-program .timeline-speakers {
+    list-style: none;
+    padding-left: 0;
+    margin: 6px 0 0;
+}
+
+.rheum-conference-program .timeline-speakers li {
+    font-size: 0.95rem;
+    color: #cdddec;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.rheum-conference-program .timeline-speakers li strong {
+    color: #ffffff;
+    background: rgba(74, 144, 226, 0.15);
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+/* Блок с названием доклада */
+.rheum-conference-program .timeline-report-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px dashed rgba(74, 144, 226, 0.4);
+    color: #e0ecff;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Бейджи */
+.rheum-conference-program .report-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rheum-conference-program .report-badge-success {
+    background: #0c3d24;
+    border-color: #2a7a4b;
+    color: #d0ffde;
+}
+
+.rheum-conference-program .report-badge-warning {
+    background: #4e3016;
+    border-color: #b77c2e;
+    color: #ffe9cc;
+}
+
+/* Спонсоры */
+.rheum-conference-program .timeline-report-title strong {
+    color: #ffd966;
+    font-weight: 600;
+    margin-left: 4px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 0 6px;
+    border-radius: 5px;
+}
+
+.rheum-conference-program .last-item {
+    margin-bottom: 0;
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .rheum-conference-program .timeline-item {
+        flex-direction: column;
+    }
+    
+    .rheum-conference-program .timeline-time {
+        min-width: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(74, 144, 226, 0.3);
+        padding: 12px;
+        justify-content: flex-start;
+    }
+    
+    .rheum-conference-program .timeline-content {
+        padding: 16px;
+    }
+}
+/* Регистрация*/
+/* Кнопка фиксирована относительно всего окна */
+.rheum-sticky-btn {
+    position: fixed !important;
+    top: 30px !important;
+    right: 30px !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    z-index: 1000;
+}
+
+/* Сама кнопка */
+.rheum-sticky-btn .sticky-register-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: #0f2840;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid rgba(74, 144, 226, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.rheum-sticky-btn .sticky-register-btn:hover {
+    background: linear-gradient(135deg, #2b5080, #163554);
+    border-color: rgba(100, 170, 255, 0.7);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rheum-sticky-btn .sticky-register-btn .uk-icon {
+    color: #4a90e2;
+}
+
+/* Мобильные */
+@media (max-width: 959px) {
+    .org-card {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        float: none !important; /* На случай, если где-то затесались флоаты */
+    }
+
+    /* 3. Убираем отступы и закругления у шапки, чтобы она прилипла к краям */
+    .header-nav-wrapper {
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        padding: 0 15px !important;
+    }
+
+    /* 4. Фикс заголовка, чтобы не вылезал за края экрана */
+    .conf-main-title {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+        word-wrap: break-word;
+    }
+}
