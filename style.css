@@ -57,7 +57,7 @@ html, body {
 }
 
 .uk-logo img {
-    max-height: 85px;
+    max-height: 130px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -494,27 +494,31 @@ html, body {
 /* --- СПОНСОРЫ --- */
 .sponsors-blue-section {
     background-color: #f8fbff !important;
-    padding: 100px 0;
+    padding: 100px 40px 120px !important; 
     width: 100%;
+    box-sizing: border-box;
 }
 
 .sponsors-title-thin {
     color: #15528e !important;
     font-size: 46px !important;
-    font-weight: 200 !important;
+    font-weight: 500 !important;
     text-transform: uppercase;
     letter-spacing: 15px !important;
     text-align: center;
     margin-bottom: 80px;
     font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    padding: 0 20px;
 }
 
 .sponsors-grid-3x2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    width: 95%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .sponsor-card-airy {
@@ -536,13 +540,6 @@ html, body {
     box-shadow: 0 30px 70px rgba(14, 69, 123, 0.2);
 }
 
-.gradient-divider {
-    height: 1px;
-    width: 60%;
-    margin: 25px 0;
-    background: linear-gradient(to right, rgba(30, 144, 255, 0) 0%, rgba(30, 144, 255, 0.3) 50%, rgba(30, 144, 255, 0) 100%);
-}
-
 .sponsor-logo {
     height: 70px;
     display: flex;
@@ -556,18 +553,6 @@ html, body {
     max-width: 80%;
     object-fit: contain;
 }
-
-.sponsor-name-thin {
-    font-size: 24px !important;
-    font-weight: 300 !important;
-    color: #2c4960 !important;
-    margin: 0 !important;
-    letter-spacing: 4px !important;
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 0 2px 4px rgb(9, 52, 102, 0.35);
-}
-
 /* --- ПОДВАЛ --- */
 #cont {
     padding: 40px 0;
@@ -827,6 +812,7 @@ html, body {
     }
 }
 
+
 @media (max-width: 1200px) {
     .sponsors-grid-3x2 {
         grid-template-columns: repeat(2, 1fr);
@@ -856,7 +842,10 @@ html, body {
     .footer-section {
     padding: 40px 15px !important;
 }
-
+.rheum-sticky-btn {
+    top: 70px !important;  
+    right: 10px !important;
+}
 .footer-grid {
     gap: 35px !important;
 }
