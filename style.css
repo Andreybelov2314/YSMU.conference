@@ -407,12 +407,12 @@ html, body {
 }
 
 .rheum-conference-program .timeline-subtitle {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #b6cef0;
-    margin: 12px 0 6px;
+    font-size: 1.2rem;         
+    font-weight: 700;          
+    color: #ffffff;            
+    margin: 12px 0 10px;
     text-transform: uppercase;
-    letter-spacing: 0.7px;
+    letter-spacing: 2px;
 }
 
 .rheum-conference-program .timeline-speaker-info {
@@ -431,13 +431,14 @@ html, body {
 .rheum-conference-program .timeline-speakers li {
     font-size: 0.95rem;
     color: #cdddec;
-    margin-bottom: 6px;
-    line-height: 1.5;
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .rheum-conference-program .timeline-speakers li strong {
     color: #ffffff;
-    background: rgba(74, 144, 226, 0.15);
+    font-size: 1.1rem;         /* крупнее ФИО */
+    background: rgba(74, 144, 226, 0.2);
     padding: 0 5px;
     border-radius: 4px;
 }
@@ -498,7 +499,10 @@ html, body {
     width: 100%;
     box-sizing: border-box;
 }
-
+.sponsor-card-airy img[alt="BIOCAD"] {
+    max-width: 95% !important;
+    transform: scale(1.9);
+}
 .sponsors-title-thin {
     color: #15528e !important;
     font-size: 46px !important;
@@ -511,9 +515,9 @@ html, body {
     padding: 0 20px;
 }
 
-.sponsors-grid-3x2 {
+.sponsors-grid-2x2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     width: 90%;
     max-width: 1200px;
@@ -689,12 +693,12 @@ html, body {
     }
     
     .rheum-sticky-btn {
-        top: 10px !important;
+        top: 8px !important;
         right: 10px !important;
     }
     
     .rheum-sticky-btn .sticky-register-btn {
-        padding: 10px 16px !important;
+        padding: 2px 16px !important;
         font-size: 0.75rem !important;
         letter-spacing: 1px !important;
         gap: 6px !important;
@@ -787,7 +791,7 @@ html, body {
         padding: 0 5px !important;
     }
     
-    .sponsors-grid-3x2 {
+    .sponsors-grid-2x2 {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
         width: 90% !important;
@@ -814,7 +818,7 @@ html, body {
 
 
 @media (max-width: 1200px) {
-    .sponsors-grid-3x2 {
+    .sponsors-grid-2x2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
